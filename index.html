@@ -10,17 +10,46 @@
     
     <h1>This is a very dang- safe tool that remote controls soren lastname from usamerica</h1>
     <h2>anyway here you go:</h2>
-    <div class="login">
+    
+    <div class="main">
+        <div class="login">
 
-        <Input placeholder="Enter Username" id="name"></Input>
-        <input type="password", placeholder="Enter Password" id="pw">
-        <input type="button" id="button" value="Activate Control?" onclick="checkLogin()">
-
-        
-
+            <Input placeholder="Enter Username" id="name"></Input>
+            <input type="password", placeholder="Enter Password" id="pw">
+            <input type="button" id="button" value="Activate Control?" onclick="checkLogin()">
+    
+            
+    
+        </div>
+        <div class="loginfo">
+            <p>If you want to use this right now you can get guest access with "guest" ans username and blank password</p>
+        </div>
     </div>
 
     <script src="script.js"></script>
+
+    <style>
+        .main {
+            background-color: azure;
+            width: 11cm;
+            height: 10cm;
+        }
+        
+        .login {
+            float: left;
+            height: 75px;
+            width: 200px;
+        }
+
+        .loginfo {
+            float: right;
+            height: 200px;
+            width: 200px;
+            background-color: gray;
+            border-color: darkslategray;
+        }
+
+    </style>
 
 </body>
 </html>
