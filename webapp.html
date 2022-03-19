@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RC Soren Webapp</title>
+</head>
+<body>
+    
+    <div class="webapp">
+
+        <input id="cmd" type="text" placeholder="Enter RCSoren Command">
+        <input type="button" onclick="execEnteredCommand()" value="Run Command">
+        
+        <form action="index.html">
+            <input type="submit" value="Logout" />
+        </form>
+
+    </div>
+
+    <script>
+
+        function execEnteredCommand() {
+            var str = document.getElementById("cmd").value;
+            const msg = `Execution of command ${str} completed`
+            alert(msg);
+        }
+
+    </script>
+
+</body>
+</html>
