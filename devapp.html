@@ -23,9 +23,17 @@
     <script>
 
         function execEnteredCommand() {
+            if (document.getElementById("cmd").value == "Terminate(soren)") {
+                alert("The task of Killing Soren will be done in about 85 years")
+            }
+            else if (document.getElementById("cmd").value == "instant.Terminate(Aiden)") {
+                alert("Sorens going to get you, Aiden! Brace yourself for some immediate death happening!")
+            }
+            else {
             var str = document.getElementById("cmd").value;
             const msg = `Execution of command ${str} completed`
             alert(msg);
+            }
         }
 
     </script>
